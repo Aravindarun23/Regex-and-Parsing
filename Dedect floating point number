@@ -1,0 +1,29 @@
+sample Input 0
+
+4
+4.0O0
+-1.00
++4.54
+SomeRandomStuff
+
+Sample Output 0
+
+False
+True
+True
+False
+
+
+
+
+
+---------------ANSWER------------------
+
+import re
+n=int(input())
+for i in range(n):
+    r=re.search(r"^[+-]?[0-9]*?\.{1}\d+$",input())
+    if r:
+        print(True)
+    else:
+        print(False)
