@@ -2,4 +2,4 @@
 
 1) Re.split()
 2) validating phone number
-3) 
+3) Dedect floating point number
