@@ -1,0 +1,24 @@
+Sample Input
+
+2
+9587456281
+1252478965
+
+Sample Output
+
+YES
+NO
+
+
+
+
+-------------ANSWER---------------------
+
+import re
+n=int(input())
+for i in range(n):
+    r=re.search(r"^[978]([0-9]{9})$",input())
+    if r:
+        print("YES")
+    else:
+        print("NO")
