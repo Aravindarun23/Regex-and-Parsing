@@ -4,3 +4,4 @@
 2) validating phone number
 3) Dedect floating point number
 4) group()groups()groupdict()
+5) findall()finditer()
