@@ -1,0 +1,32 @@
+Sample Input
+
+rabcdeefgyYhFjkIoomnpOeorteeeeet
+
+Sample Output
+
+ee
+Ioo
+Oeo
+eeeee
+
+Explanation
+
+ee is located between consonant
+Ioo is located between consonant 
+Oeo is located between consonant 
+eeeee is located between consonant 
+
+----------------------------------ANSWER------------------------
+
+
+import re
+n=input()
+r=re.findall(r"[qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM][aeiouAEIOU]{2,}(?=[qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM])",n)
+if r:
+    v=[]
+    for i in r:
+        v.append(i)   
+    for j in v:
+        print(j[1:])
+else:
+    print(-1)
