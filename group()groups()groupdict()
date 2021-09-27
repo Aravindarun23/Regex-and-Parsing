@@ -1,0 +1,22 @@
+Output Format
+
+Print the first occurrence of the repeating character. If there are no repeating characters, print -1.
+
+Sample Input
+
+..12345678910111213141516171820212223
+
+Sample Output
+
+1
+
+
+-------ANSWER--------------
+
+import re
+n=input()
+m=re.search(r"([a-z A-Z 0-9])\1",n)
+if m:
+    print(m.group()[0])
+else:
+    print(-1)
